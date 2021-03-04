@@ -68,6 +68,10 @@ img {
     grid-row: 1 / span 3;
 }
 
+.l-heading {
+    font-size: 4rem;
+}
+
 .card {
     background: #fff;
     color: #333;
@@ -147,6 +151,16 @@ img {
 .py1 { padding: 1rem 0; }
 .py2 { padding: 1.5rem 0; }
 .py3 { padding: 2rem 0; }
+
+.list li {
+    width: 90%;
+    padding: 0.7rem 0;
+    border-bottom: 1px #777 dotted;
+}
+
+.list li a:hover {
+    color: var(--primary-clr);
+}
 
 /* Navbar */
 #main-nav {
@@ -278,14 +292,4 @@ img {
     border: none;
     outline: none;
     border-radius: 5px;
-}
-
-#main-footer .footer-content ul li {
-    width: 90%;
-    padding: 0.7rem 0;
-    border-bottom: 1px #777 dotted;
-}
-
-#main-footer .footer-content ul li a:hover {
-    color: var(--primary-clr);
 }
