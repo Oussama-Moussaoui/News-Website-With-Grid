@@ -1,0 +1,111 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap');
+
+/* Root */
+:root {
+    --primary-clr: #c72727;
+    --snd-clr: #f99500;
+    --light-clr: #f3f3f3;
+    --dark-clr: #333;
+}
+
+.category {
+    --sports-clr: rgb(57, 230, 57);
+    --ent-clr: #a66bbe;
+    --tech-clr: #009cff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main styling */
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    background: var(--light-clr);
+}
+
+a {
+    color: var(--dark-clr);
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+p {
+    margin: 10px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Staatliches', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0.6rem;
+    line-height: 1.2;
+}
+
+img {
+    width: 100%;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+}
+
+/* Navbar */
+#main-nav {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#main-nav .nav-content {
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    padding: 1rem;
+    align-items: center;
+}
+
+#main-nav .logo {
+    width: 180px;
+}
+
+#main-nav .nav-content ul {
+    justify-self: end;
+    display: flex;
+}
+
+#main-nav .nav-content ul a {
+    font-weight: bold;
+    padding: .75rem;
+}
+
+#main-nav .nav-content ul a.current {
+    background: var(--primary-clr);
+    color: #fff;
+}
+
+
+#main-nav .nav-content ul a:hover {
+    background: #f4f4f4;
+    color: #000;
+}
+
+#main-nav .s-media {
+    justify-self: center;
+}
+
+#main-nav .s-media i {
+    margin-right: .5rem;
+}
+
+
