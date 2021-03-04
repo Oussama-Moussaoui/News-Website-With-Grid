@@ -1,0 +1,33 @@
+/* Navbar */
+#main-nav .nav-content {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#main-nav .nav-content ul,
+#main-nav .logo {
+    grid-column: 2 / span 1;
+}
+
+#main-nav .nav-content ul {
+    margin-top: .7rem;
+}
+
+#main-nav .nav-content ul a {
+    padding: .5rem;
+}
+
+#main-nav .s-media {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 2rem;
+    justify-self: end;
+    align-self: center;
+}
+
+#main-nav .s-media i {
+    font-size: 1.5rem;
+}
+
