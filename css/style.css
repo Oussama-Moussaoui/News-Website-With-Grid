@@ -115,7 +115,7 @@ img {
     color: #fff;
     border: none;
     cursor: pointer;
-    transition: 0.3s transform ease;
+    transition: 0.3s opacity ease;
 }
 
 .btn-snd { background: var(--snd-clr); }
@@ -129,7 +129,6 @@ img {
 
 .btn:hover {
     opacity: 0.9;
-    transform: translateY(-2px);
 }
 
 .p1 { padding: 1rem; }
@@ -236,4 +235,47 @@ img {
 
 #home-articles .articles-container > *:last-child {
     grid-column: 2 / span 2;
+}
+
+/* Main Footer */
+#main-footer img {
+    width: 150px;
+}
+
+#main-footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+#main-footer .footer-content > *:last-child {
+    grid-column: 1 / span 4;
+    text-align: center;
+    background: #444;
+    padding: .5rem;
+    font-size: 0.8rem;
+}
+
+#main-footer .footer-content form input[type='submit'] {
+    width: 85%;
+    border-radius: 5px;
+}
+
+#main-footer .footer-content form input[type='email'] {
+    width: 85%;
+    margin-bottom: .5rem;
+    padding: 0.45rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#main-footer .footer-content ul li {
+    width: 90%;
+    padding: 0.7rem 0;
+    border-bottom: 1px #777 dotted;
+}
+
+#main-footer .footer-content ul li a:hover {
+    color: var(--primary-clr);
 }
