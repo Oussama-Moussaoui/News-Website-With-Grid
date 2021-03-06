@@ -308,3 +308,12 @@ img {
     outline: none;
     border-radius: 5px;
 }
+
+#main-footer #me {
+    display: inline-block;
+    color: #fff;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    background: var(--sports-clr);
+}
